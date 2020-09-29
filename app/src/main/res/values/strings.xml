@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">waai em</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">E_Mail</string>
+    <string name="login">Log In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account">Don\'t have account yet?</string>
+    <string name="click">Click</string>
+    <string name="here">HERE</string>
+    <string name="to_join">to join our community</string>
+    <string name="create_a_vendor_account">Create A Vendor Account</string>
+    <string name="create_a_taxi_rider_account">Create A Taxi/Rider Account</string>
+    <string name="create_a_different_account">Create A Different Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="img">image desc</string>
+    <string name="cooking">What\'s cooking</string>
+    <string name="post">Post</string>
+    <string name="username_hint">Username</string>
+    <string name="delete">Delete</string>
+    <string name="follow">Follow</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="edit_post">Edit Post</string>
+    <string name="_0">0</string>
+    <string name="followers">Followers</string>
+    <string name="followings">Followings</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="location_hint">Location</string>
+    <string name="change_profile_picture">Change Profile Picture</string>
+    <string name="firstname_hint">Firstname</string>
+    <string name="lastname_hint">Lastname</string>
+    <string name="bio">Bio</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="save">Save</string>
+    <string name="log_out">Log Out</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="deactivate">Deactivate</string>
+    <string name="deactivate_account">Deactivate Account</string>
+    <string name="write_a_comment">Write a comment</string>
+    <string name="confirm_pwd">Confirm Password</string>
+    <string name="hello">Hello, welcome to Ym</string>
+    <string name="by_signing_up">By signing up, you agree to all our terms and conditions></string>
+    <string name="reset_my_password">Reset My Password</string>
+    <string name="reset_pwd">Reset Your Password</string>
+    <string name="set_prof_pic">Set your profile photo</string>
+    <string name="phone_no_hint">Phone Number</string>
+    <string name="location">Where are you from?</string>
+    <string name="recovery">Please enter your recovery E-mail</string>
+    <string name="tell_us_your_gender">Tell us your gender</string>
+    <string name="tell_us_your_birthday">Tell us your birthday</string>
+    <string name="dd_mm_yr">DD/MM/YR</string>
+    <string name="what_is_your_current_occupation">What is your current occupation?</string>
+    <string name="occupation">OCCUPATION</string>
+    <string name="what_is_your_current_residence_address">What is your current residence/address?</string>
+    <string name="residence">RESIDENCE</string>
+    <string name="what_is_your_current_relationship_status">What is your current relationship status?</string>
+    <string name="what_is_your_educational_level">What is your educational level?</string>
+    <string name="what_is_your_religion">What is your religion?</string>
+    <string name="tell_us_the_languages_you_speak">Tell us the languages you speak</string>
+    <string name="languages_spoken">LANGUAGES SPOKEN</string>
+    <string name="tell_us_your_favorite_sport_team">Tell us your favorite sport team</string>
+    <string name="favourite_sport_team">FAVOURITE SPORT TEAM</string>
+    <string name="tell_us_your_favorite_colors">Tell us your favorite colors</string>
+    <string name="favourite_color">FAVOURITE COLOR</string>
+    <string name="tell_us_your_favorite_books">Tell us your favorite books</string>
+    <string name="favourite_book">FAVOURITE BOOK</string>
+    <string name="tell_us_your_favorite_movies">Tell us your favorite movies</string>
+    <string name="favourite_movie">FAVOURITE MOVIE</string>
+    <string name="tell_us_your_favorite_tv_shows">Tell us your favorite TV Shows</string>
+    <string name="favourite_tv_show">FAVOURITE TV SHOW</string>
+    <string name="tell_us_your_favorite_music_genres">Tell us your favorite music genres</string>
+    <string name="favourite_music_genre">FAVOURITE MUSIC GENRE</string>
+    <string name="tell_us_your_favorite_food">Tell us your favorite food</string>
+    <string name="favourite_food">FAVOURITE FOOD</string>
+    <string name="tell_us_your_favorite_drink">Tell us your favorite drink</string>
+    <string name="favourite_drink">FAVOURITE DRINK</string>
+    <string name="tell_us_your_favorite_travel_destination">Tell us your favorite travel destination</string>
+    <string name="favourite_travel_destination">FAVOURITE TRAVEL DESTINATION</string>
+    <string name="skip">Skip</string>
+    <string name="discover_people">Discover People</string>
+    <string name="discover_more">Discover More</string>
+
+
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <string-array name="education">
+        <item>Primary</item>
+        <item>Secondary</item>
+        <item>University</item>
+        <item>College</item>
+    </string-array>
+    <string-array name="relationship">
+        <item>Single</item>
+        <item>Complex</item>
+        <item>Open relationship</item>
+        <item>Closed relationship</item>
+    </string-array>
+    <string-array name="religion">
+        <item>Christianity</item>
+        <item>Muslim</item>
+        <item>Hinduism</item>
+        <item>Paganism</item>
+    </string-array>
+
+</resources>

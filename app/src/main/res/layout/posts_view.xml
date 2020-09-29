@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="posts"
+            type="com.asisst.waaiem.user.main.pages.home.pojo.Posts" />
+
+        <variable
+            name="viewmodel"
+            type="com.asisst.waaiem.user.main.pages.home.viewmodel.HomeViewmodel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/posts_prof_pic_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/attach"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/posts_username_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/username_hint"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/posts_prof_pic_id"
+            app:layout_constraintStart_toEndOf="@+id/posts_prof_pic_id"
+            app:layout_constraintTop_toTopOf="@+id/posts_prof_pic_id" />
+
+        <TextView
+            android:id="@+id/posts_name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="TextView"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/posts_username_id"
+            app:layout_constraintStart_toEndOf="@+id/posts_username_id"
+            app:layout_constraintTop_toTopOf="@+id/posts_username_id" />
+
+        <TextView
+            android:id="@+id/posts_time_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="TextView"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/posts_username_id"
+            app:layout_constraintStart_toEndOf="@+id/posts_name_id"
+            app:layout_constraintTop_toTopOf="@+id/posts_username_id" />
+
+        <ImageView
+            android:id="@+id/posts_more_id"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/img"
+            app:layout_constraintBottom_toBottomOf="@+id/posts_prof_pic_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/posts_prof_pic_id"
+            app:srcCompat="@drawable/ic_more" />
+
+        <TextView
+            android:id="@+id/posts_caption_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/posts_prof_pic_id" />
+
+        <ImageView
+            android:id="@+id/posts_image_view_id"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/img"
+            android:scaleType="centerCrop"
+            android:translationZ="-10dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/posts_caption_id" />
+
+        <ImageView
+            android:id="@+id/posts_comments_id"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/posts_image_view_id"
+            app:srcCompat="@drawable/ic_comments_unselected" />
+
+        <TextView
+            android:id="@+id/posts_comments_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="@string/_0"
+            android:textColor="@color/gray"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/posts_comments_id"
+            app:layout_constraintStart_toEndOf="@+id/posts_comments_id"
+            app:layout_constraintTop_toTopOf="@+id/posts_comments_id" />
+
+        <ImageView
+            android:id="@+id/posts_flame_id"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/img"
+            app:layout_constraintStart_toEndOf="@+id/posts_comments_count"
+            app:layout_constraintTop_toBottomOf="@+id/posts_image_view_id"
+            app:srcCompat="@drawable/ic_flame" />
+
+        <TextView
+            android:id="@+id/posts_flame_count"
+            android:layout_width="7dp"
+            android:layout_height="9dp"
+            android:text="@string/_0"
+            android:textColor="@color/gray"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/posts_flame_id"
+            app:layout_constraintStart_toEndOf="@+id/posts_flame_id"
+            app:layout_constraintTop_toTopOf="@+id/posts_flame_id" />
+
+        <ImageView
+            android:id="@+id/posts_spice_id"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/img"
+            app:layout_constraintStart_toEndOf="@+id/posts_flame_count"
+            app:layout_constraintTop_toBottomOf="@+id/posts_image_view_id"
+            app:srcCompat="@drawable/ic_spice_unselected" />
+
+        <TextView
+            android:id="@+id/posts_spice_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textColor="@color/gray"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/posts_spice_id"
+            app:layout_constraintStart_toEndOf="@+id/posts_spice_id"
+            app:layout_constraintTop_toTopOf="@+id/posts_spice_id" />
+
+        <ImageView
+            android:id="@+id/posts_stale_id"
+            android:layout_width="20dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/img"
+            app:layout_constraintStart_toEndOf="@+id/posts_spice_count"
+            app:layout_constraintTop_toBottomOf="@+id/posts_image_view_id"
+            app:srcCompat="@drawable/ic_stale_unselected" />
+
+        <TextView
+            android:id="@+id/posts_stale_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textColor="@color/gray"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/posts_stale_id"
+            app:layout_constraintStart_toEndOf="@+id/posts_stale_id"
+            app:layout_constraintTop_toTopOf="@+id/posts_stale_id" />
+
+        <ImageView
+            android:id="@+id/imageView78"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/posts_image_view_id"
+            app:srcCompat="@drawable/ic_tag" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/fade_gray"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/posts_spice_id" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

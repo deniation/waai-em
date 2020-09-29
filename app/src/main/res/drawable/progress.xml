@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/login">
+    <shape android:innerRadiusRatio="3"
+        android:shape="ring"
+        android:useLevel="false">
+        <solid android:color="@color/white"/>
+    </shape>
+</item>
+
+    <item android:id="@+id/pro">
+        <rotate android:fromDegrees="0"
+            android:toDegrees="360">
+            <shape android:innerRadiusRatio="3"
+                android:shape="ring"
+                android:useLevel="true">
+                <solid android:color="@color/dark_red"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
